@@ -1,0 +1,97 @@
+header{
+    width: 100%;
+    background-color: rgb(52, 56, 56);
+    color: aliceblue;
+}
+ 
+header > h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ img{
+    margin: 10px;
+    padding: 6px;
+    background-color: rgb(30, 82, 223);
+    width: 100px;
+ }
+ img:hover{
+    background-color: rgb(30, 201, 223);
+}
+
+#ordenInicio {
+    padding-top: 15px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#interfazJuego {
+    display: none;
+    
+}
+p{
+    font-size:15px;
+}
+
+#opcionesJuego {
+    
+    margin: 20px;
+}
+#opcionesElegidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#resultado {
+   font-weight: bold;
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+        
+}
+
+#totalUsuario {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    
+}
+#totalMaquina {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    
+}
+#resultadoFinal {
+    margin-top: 40px;
+    font-size: 50px;
+    
+}
+#reinicio {
+    display:none;
+    margin-top: 40px;
+}
+#reinicio button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
