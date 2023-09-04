@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel y Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, Papel y Tijera</h1>
+    </header>
+    <main>
+        <div id="identificacionUsuario">
+            <h1>Identificación del Jugador</h1>
+            <button>Indentifíquese para iniciar el juego:</button>
+        </div>
+        <div id="ordenInicio"></div>       
+        <div id="interfazJuego">
+            <div id="opcionesJuego">
+                    <img src="imagenes/piedra.jpg" alt="imagen piedra" onclick="eleccionUsuario(0)">
+                    <img src="imagenes/papel.jpg" alt="imagen papel" onclick="eleccionUsuario(1)">    
+                    <img src="imagenes/tijera.jpg" alt="imagen tijera" onclick ="eleccionUsuario(2)">   
+            </div>
+            <div id="opcionesElegidas">
+                <div id="usuario">
+                    <h2>Usuario</h2>
+                    <img src="imagenes/pregunta.png" alt="opcionUsuario" id="imagenUsuario">
+                </div>
+                <div id="resultado"></div>
+                <div id="maquina">
+                    <h2>Máquina</h2>
+                    <img src="imagenes/pregunta.png" alt="opcionMaquina" id="imagenMaquina">
+                </div>
+            </div>
+            <div id="score">      
+                <div id="totalUsuario"></div>
+                    
+                <div id="totalMaquina"></div>
+            </div>
+            <div id="resultadoFinal"></div>
+        </div>
+        <div id="reinicio">
+            <button type="button" onclick="location.reload()">Reiniciar</button>
+        </div>
+        <script src="juego.js"></script>
+        
+      
+    </main>
+</body>
+</html>
